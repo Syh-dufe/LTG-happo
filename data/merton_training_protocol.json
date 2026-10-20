@@ -1,0 +1,40 @@
+{
+  "dataset_role": "training demand generation protocol, not archived realized trajectories",
+  "generation_timing": "online at environment episode reset",
+  "generator": "Merton jump-diffusion demand generator from Liu HAPPO inventory environment",
+  "source_repository": "https://github.com/xiaotianliu01/Multi-Agent-Deep-Reinforcement-Learning-on-Multi-Echelon-Inventory-Management",
+  "source_commit": "a7e5a3e83e21565a5799483bc534e39635ec65dd",
+  "source_file": "envs/generator.py and envs/serial.py",
+  "episode_horizon": 200,
+  "max_demand": 20,
+  "base_demand_scale": 10,
+  "generator_parameters_from_source": {
+    "initial_log_demand": 0,
+    "var": 15,
+    "delta": 0.01,
+    "delta_t": 15,
+    "poisson_jump_intensity": 15,
+    "jump_drift_a": 0,
+    "jump_diffusion_scale_b": 0.01,
+    "jump_normal_std": 2,
+    "integer_conversion": "int(exp(log_demand) * 10)",
+    "acceptance_condition": "mean demand strictly between 0 and 20",
+    "upper_cap": 20
+  },
+  "seed_ids": [
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "realized_training_trajectories_archived": false,
+  "limitation": "Exact historical worker RNG streams cannot be reconstructed because generated episode paths were not saved.",
+  "seed_ids_for_reproduction": [
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

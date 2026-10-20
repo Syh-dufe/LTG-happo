@@ -1,0 +1,75 @@
+{
+  "format": "CSV",
+  "source_note": "These are reused diagnostic/test traces, not a fresh untouched holdout.",
+  "dataset": "Matched LTG-HAPPO evaluation demand inputs",
+  "source": "Previously observed HAPPO evaluation trajectories in appendix_v1",
+  "seeds": [
+    {
+      "seed": 11,
+      "file": "data/test_demand/seed_11.csv",
+      "paths": 80,
+      "periods_per_path": 200,
+      "records": 16000,
+      "paths_by_scenario": {
+        "base": 40,
+        "shock": 40
+      },
+      "sha256": "bf466f22f55f8cd66cb204c5a3fbe8def03af304ad19c73944a49ed761eb4327",
+      "source_relative": "results/happo_matched_evaluation/appendix_v1/seed11/periods.csv"
+    },
+    {
+      "seed": 12,
+      "file": "data/test_demand/seed_12.csv",
+      "paths": 80,
+      "periods_per_path": 200,
+      "records": 16000,
+      "paths_by_scenario": {
+        "base": 40,
+        "shock": 40
+      },
+      "sha256": "a43ff1eaa2b1ffc1bb9532fe631363e9189936fc689397afcbc1ac7f9c957091",
+      "source_relative": "results/happo_matched_evaluation/appendix_v1/seed12/periods.csv"
+    },
+    {
+      "seed": 13,
+      "file": "data/test_demand/seed_13.csv",
+      "paths": 80,
+      "periods_per_path": 200,
+      "records": 16000,
+      "paths_by_scenario": {
+        "base": 40,
+        "shock": 40
+      },
+      "sha256": "0304ed8a2d9f9dceb05251b3e879b36e624935248de05ff1f4486516bdafe976",
+      "source_relative": "results/happo_matched_evaluation/appendix_v1/seed13/periods.csv"
+    },
+    {
+      "seed": 14,
+      "file": "data/test_demand/seed_14.csv",
+      "paths": 80,
+      "periods_per_path": 200,
+      "records": 16000,
+      "paths_by_scenario": {
+        "base": 40,
+        "shock": 40
+      },
+      "sha256": "cd495737179ca1829885e9f43bb150d89b9e998996091322663752bfbb6e44cd",
+      "source_relative": "results/happo_matched_evaluation/appendix_v1/seed14/periods.csv"
+    },
+    {
+      "seed": 15,
+      "file": "data/test_demand/seed_15.csv",
+      "paths": 80,
+      "periods_per_path": 200,
+      "records": 16000,
+      "paths_by_scenario": {
+        "base": 40,
+        "shock": 40
+      },
+      "sha256": "82041bb30786e925daad3a7e9af9be6e37a99b9875135ac251a5047c60d5b80c",
+      "source_relative": "results/happo_matched_evaluation/appendix_v1/seed15/periods.csv"
+    }
+  ],
+  "demand_arrays_identical_across_seed_files": true,
+  "note": "Each CSV repeats the same 80 trajectories and labels them with the compared model seed; this supports paired cross-seed evaluation."
+}

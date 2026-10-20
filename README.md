@@ -33,3 +33,7 @@ The implementation was developed against Liu et al.'s HAPPO inventory code at co
 ## Dependencies
 
 The architecture modules require Python, PyTorch, and NumPy. HAPPO and Sundial dependencies are supplied by the host project as described above.
+
+## Data
+
+The paired seed-level evaluation demand inputs and the training-demand generation protocol are in [data/README.md](data/README.md). The protocol records that historical online training draws were not archived.
